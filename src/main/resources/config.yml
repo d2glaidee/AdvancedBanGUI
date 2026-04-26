@@ -1,0 +1,14 @@
+# AbanGUI — Configuration
+# Supported languages: any code that has a matching messages_<code>.yml file
+language: "en"
+
+# How many player heads fit on one page (max 45 for a 6-row inventory)
+players-per-page: 45
+
+gui:
+  player-list-rows: 6
+  # 5 rows are needed to fit every action icon (ban / tempban / banip / tempipban
+  # / mute / tempmute / kick / warn / tempwarn / note / unban / unmute / unwarn
+  # / unnote / check / history / warns / notes / banlist) plus the nav row.
+  action-menu-rows: 5
+  reason-menu-rows: 6

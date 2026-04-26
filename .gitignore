@@ -1,0 +1,12 @@
+.gradle/
+build/
+gradle/
+gradlew
+gradlew.bat
+.idea/
+*.iml
+out/
+.DS_Store
+Thumbs.db
+run/
+logs/

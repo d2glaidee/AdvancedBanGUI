@@ -1,0 +1,90 @@
+# AbanGUI — Русская локализация
+
+prefix: "&8[&cAbanGUI&8] &r"
+
+menu:
+  player-list-title: "&8Игроки — Стр. {page}/{max_page}"
+  action-menu-title: "&8Действия: &c{player}"
+  reason-menu-title: "&8Причина: &c{action} — {player}"
+
+buttons:
+  next-page: "&aСледующая страница →"
+  prev-page: "&a← Предыдущая страница"
+  back: "&cНазад"
+  close: "&4Закрыть"
+
+  ban: "&4Бан"
+  tempban: "&cВрем. Бан"
+  banip: "&4Бан IP"
+  tempipban: "&cВрем. Бан IP"
+  mute: "&6Мьют"
+  tempmute: "&eВрем. Мьют"
+  kick: "&6Кик"
+  warn: "&9Варн"
+  tempwarn: "&bВрем. Варн"
+  note: "&fЗаметка"
+  unban: "&aРазбанить"
+  unbanip: "&aСнять бан IP"
+  unmute: "&aСнять мьют"
+  unwarn: "&aСнять варны"
+  unnote: "&aУдалить заметки"
+  check: "&dПроверка"
+  history: "&dИстория"
+  warns: "&bВарны"
+  notes: "&bЗаметки"
+  banlist: "&5Список банов"
+
+  ban-lore:
+    - "&7Забанить игрока навсегда"
+  tempban-lore:
+    - "&7Забанить игрока временно"
+  banip-lore:
+    - "&7Забанить IP игрока навсегда"
+  tempipban-lore:
+    - "&7Забанить IP игрока временно"
+  mute-lore:
+    - "&7Замьютить игрока навсегда"
+  tempmute-lore:
+    - "&7Замьютить игрока временно"
+  kick-lore:
+    - "&7Выгнать игрока с сервера"
+  warn-lore:
+    - "&7Выдать предупреждение"
+  tempwarn-lore:
+    - "&7Выдать временное предупреждение"
+  note-lore:
+    - "&7Прикрепить заметку модератора к игроку"
+  unban-lore:
+    - "&7Снять бан с игрока"
+  unbanip-lore:
+    - "&7Снять IP-бан с игрока"
+  unmute-lore:
+    - "&7Снять мьют с игрока"
+  unwarn-lore:
+    - "&7Удалить ВСЕ предупреждения игрока"
+  unnote-lore:
+    - "&7Удалить ВСЕ заметки игрока"
+  check-lore:
+    - "&7Показать UUID, IP, страну и"
+    - "&7количество активных наказаний"
+  history-lore:
+    - "&7Посмотреть полную историю наказаний"
+  warns-lore:
+    - "&7Посмотреть список варнов игрока"
+  notes-lore:
+    - "&7Посмотреть список заметок игрока"
+  banlist-lore:
+    - "&7Посмотреть все активные наказания"
+
+player-head:
+  online: "&aВ сети"
+  offline: "&7Не в сети"
+  click-hint: "&eНажмите, чтобы открыть меню действий"
+
+messages:
+  no-permission: "&cУ вас нет прав для использования этой команды."
+  player-only: "&cЭту команду может использовать только игрок."
+  action-executed: "&aДействие &e{action} &aвыполнено для игрока &e{player}&a."
+  action-no-permission: "&cУ вас нет прав на действие &e{action}&c."
+  reload-success: "&aКонфигурация AbanGUI перезагружена."
+  no-reasons: "&cДля этого действия не настроены причины — добавьте их в reasons.yml."

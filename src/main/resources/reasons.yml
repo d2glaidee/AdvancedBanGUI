@@ -1,0 +1,247 @@
+# ============================================================
+#                    AbanGUI — Punishment Reasons
+# ============================================================
+#
+# [EN] This file defines punishment reasons shown in the GUI.
+#      You can freely add, edit, or remove any entry.
+#      After changes, run /abangui reload to apply.
+#
+# [RU] Этот файл определяет причины наказаний в GUI-меню.
+#      Вы можете свободно добавлять, изменять или удалять записи.
+#      После изменений выполните /abangui reload для применения.
+#
+# ------------------------------------------------------------
+#
+# [EN] FORMAT:
+#
+#   reasons:
+#     your_unique_key:            <-- any unique name, not shown in-game
+#       display: "&cYour Reason"  <-- text shown in the GUI (& color codes work)
+#       time: "7d"                <-- duration for temp-commands (see below)
+#       cmd: "tempban"            <-- which AdvancedBan command to run
+#
+# [RU] ФОРМАТ:
+#
+#   reasons:
+#     your_unique_key:              <-- любое уникальное имя, в игре не показывается
+#       display: "&cВаша причина"   <-- текст в GUI (поддерживаются & цветовые коды)
+#       time: "7d"                  <-- длительность для temp-команд
+#       cmd: "tempban"              <-- какую команду AdvancedBan выполнять
+#
+# ------------------------------------------------------------
+#
+# [EN] AVAILABLE COMMANDS (cmd):
+#
+#   ban        — permanent ban           (time is ignored)
+#   tempban    — temporary ban           (time is required)
+#   banip      — permanent IP ban        (time is ignored)
+#   tempipban  — temporary IP ban        (time is required)
+#   mute       — permanent mute          (time is ignored)
+#   tempmute   — temporary mute          (time is required)
+#   kick       — single-shot kick        (time is ignored)
+#   warn       — permanent warning       (time is ignored)
+#   tempwarn   — temporary warning       (time is required)
+#   note       — staff note              (time is ignored)
+#
+# [RU] ДОСТУПНЫЕ КОМАНДЫ (cmd):
+#
+#   ban        — перманентный бан         (time игнорируется)
+#   tempban    — временный бан            (time обязателен)
+#   banip      — перманентный бан IP      (time игнорируется)
+#   tempipban  — временный бан IP         (time обязателен)
+#   mute       — перманентный мьют        (time игнорируется)
+#   tempmute   — временный мьют           (time обязателен)
+#   kick       — кик с сервера            (time игнорируется)
+#   warn       — перманентный варн        (time игнорируется)
+#   tempwarn   — временный варн           (time обязателен)
+#   note       — заметка модератора       (time игнорируется)
+#
+# ------------------------------------------------------------
+#
+# [EN] TIME FORMAT:
+#
+#   Xmo  — months       example: 2mo  = 2 months
+#   Xd   — days         example: 14d  = 14 days
+#   Xh   — hours        example: 6h   = 6 hours
+#   Xm   — minutes      example: 30m  = 30 minutes
+#   Xs   — seconds      example: 60s  = 60 seconds
+#
+#   You can combine them: 1d12h = 1 day and 12 hours
+#
+# [RU] ФОРМАТ ВРЕМЕНИ:
+#
+#   Xmo  — месяцы       пример: 2mo  = 2 месяца
+#   Xd   — дни          пример: 14d  = 14 дней
+#   Xh   — часы         пример: 6h   = 6 часов
+#   Xm   — минуты       пример: 30m  = 30 минут
+#   Xs   — секунды      пример: 60s  = 60 секунд
+#
+#   Можно комбинировать: 1d12h = 1 день и 12 часов
+#
+# ------------------------------------------------------------
+#
+# [EN] COLOR CODES for display names:
+#
+#   &0 Black       &1 Dark Blue    &2 Dark Green   &3 Dark Aqua
+#   &4 Dark Red    &5 Purple       &6 Gold         &7 Gray
+#   &8 Dark Gray   &9 Blue         &a Green        &b Aqua
+#   &c Red         &d Pink         &e Yellow       &f White
+#   &l Bold        &o Italic       &n Underline    &m Strikethrough
+#   &r Reset
+#
+# [RU] ЦВЕТОВЫЕ КОДЫ для display:
+#
+#   &0 Чёрный      &1 Тёмно-синий  &2 Тёмно-зелёный  &3 Тёмно-голубой
+#   &4 Тёмно-красный &5 Фиолетовый &6 Золотой        &7 Серый
+#   &8 Тёмно-серый &9 Синий        &a Зелёный         &b Голубой
+#   &c Красный     &d Розовый      &e Жёлтый          &f Белый
+#   &l Жирный      &o Курсив       &n Подчёркнутый    &m Зачёркнутый
+#   &r Сброс
+#
+# ------------------------------------------------------------
+#
+# [EN] EXAMPLES — delete everything below and write your own!
+# [RU] ПРИМЕРЫ — удалите всё ниже и напишите свои!
+#
+# ============================================================
+
+reasons:
+
+  # --- TEMPMUTE reasons / Причины временного мьюта ---
+
+  flood:
+    display: "&eFlood / Spam"
+    time: "1h"
+    cmd: "tempmute"
+
+  caps:
+    display: "&eCaps Abuse"
+    time: "30m"
+    cmd: "tempmute"
+
+  insult:
+    display: "&cInsulting"
+    time: "3h"
+    cmd: "tempmute"
+
+  # --- MUTE reasons / Причины перманентного мьюта ---
+
+  insult_heavy:
+    display: "&4Severe Insult"
+    time: ""
+    cmd: "mute"
+
+  # --- KICK reasons / Причины кика ---
+
+  kick_afk:
+    display: "&eAFK"
+    time: ""
+    cmd: "kick"
+
+  kick_warning:
+    display: "&6Final Warning"
+    time: ""
+    cmd: "kick"
+
+  kick_relog:
+    display: "&7Please relog"
+    time: ""
+    cmd: "kick"
+
+  # --- TEMPBAN reasons / Причины временного бана ---
+
+  advertising:
+    display: "&cAdvertising"
+    time: "7d"
+    cmd: "tempban"
+
+  cheating:
+    display: "&4Cheating"
+    time: "30d"
+    cmd: "tempban"
+
+  grief:
+    display: "&6Griefing"
+    time: "14d"
+    cmd: "tempban"
+
+  skin:
+    display: "&eInappropriate Skin"
+    time: "1d"
+    cmd: "tempban"
+
+  # --- BAN reasons / Причины перманентного бана ---
+
+  cheating_perm:
+    display: "&4Cheating (permanent)"
+    time: ""
+    cmd: "ban"
+
+  nickname:
+    display: "&eInappropriate Nickname"
+    time: ""
+    cmd: "ban"
+
+  # --- BANIP reasons / Причины бана IP ---
+
+  banip_evasion:
+    display: "&4Ban Evasion"
+    time: ""
+    cmd: "banip"
+
+  banip_alt:
+    display: "&4Alt Account Abuse"
+    time: ""
+    cmd: "banip"
+
+  # --- TEMPIPBAN reasons / Причины временного бана IP ---
+
+  tempipban_evasion:
+    display: "&cBan Evasion (temporary)"
+    time: "30d"
+    cmd: "tempipban"
+
+  tempipban_shared:
+    display: "&6Shared Network Abuse"
+    time: "7d"
+    cmd: "tempipban"
+
+  # --- TEMPWARN reasons / Причины временного варна ---
+
+  spam_warn:
+    display: "&eSpam Warning"
+    time: "12h"
+    cmd: "tempwarn"
+
+  behavior_warn:
+    display: "&eInappropriate Behavior"
+    time: "24h"
+    cmd: "tempwarn"
+
+  # --- WARN reasons / Причины перманентного варна ---
+
+  perm_warn:
+    display: "&cSerious Violation"
+    time: ""
+    cmd: "warn"
+
+  # --- NOTE reasons / Причины заметок ---
+
+  note_suspicious:
+    display: "&eSuspicious behavior — keep an eye on"
+    time: ""
+    cmd: "note"
+
+  note_warned:
+    display: "&6Verbally warned in chat"
+    time: ""
+    cmd: "note"
+
+  note_appeal:
+    display: "&bAppeal pending"
+    time: ""
+    cmd: "note"
+
+  # [EN] ADD YOUR OWN BELOW — just follow the format above
+  # [RU] ДОБАВЛЯЙТЕ СВОИ НИЖЕ — просто следуйте формату выше
+

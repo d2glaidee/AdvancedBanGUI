@@ -1,0 +1,90 @@
+# AbanGUI — English localization
+
+prefix: "&8[&cAbanGUI&8] &r"
+
+menu:
+  player-list-title: "&8Players — Page {page}/{max_page}"
+  action-menu-title: "&8Actions: &c{player}"
+  reason-menu-title: "&8Reason: &c{action} — {player}"
+
+buttons:
+  next-page: "&aNext Page →"
+  prev-page: "&a← Previous Page"
+  back: "&cBack"
+  close: "&4Close"
+
+  ban: "&4Ban"
+  tempban: "&cTempBan"
+  banip: "&4BanIP"
+  tempipban: "&cTempBanIP"
+  mute: "&6Mute"
+  tempmute: "&eTempMute"
+  kick: "&6Kick"
+  warn: "&9Warn"
+  tempwarn: "&bTempWarn"
+  note: "&fNote"
+  unban: "&aUnban"
+  unbanip: "&aUnbanIP"
+  unmute: "&aUnmute"
+  unwarn: "&aClear Warnings"
+  unnote: "&aClear Notes"
+  check: "&dCheck"
+  history: "&dHistory"
+  warns: "&bWarnings"
+  notes: "&bNotes"
+  banlist: "&5Banlist"
+
+  ban-lore:
+    - "&7Permanently ban the player"
+  tempban-lore:
+    - "&7Temporarily ban the player"
+  banip-lore:
+    - "&7Permanently ban the player's IP"
+  tempipban-lore:
+    - "&7Temporarily ban the player's IP"
+  mute-lore:
+    - "&7Permanently mute the player"
+  tempmute-lore:
+    - "&7Temporarily mute the player"
+  kick-lore:
+    - "&7Kick the player from the server"
+  warn-lore:
+    - "&7Issue a warning"
+  tempwarn-lore:
+    - "&7Issue a temporary warning"
+  note-lore:
+    - "&7Attach a staff note to the player"
+  unban-lore:
+    - "&7Remove ban from the player"
+  unbanip-lore:
+    - "&7Remove IP ban from the player"
+  unmute-lore:
+    - "&7Remove mute from the player"
+  unwarn-lore:
+    - "&7Remove ALL warnings from the player"
+  unnote-lore:
+    - "&7Remove ALL notes from the player"
+  check-lore:
+    - "&7View UUID, IP, country and"
+    - "&7active ban/mute/warn/note counts"
+  history-lore:
+    - "&7View full punishment history"
+  warns-lore:
+    - "&7View the player's warnings"
+  notes-lore:
+    - "&7View the player's notes"
+  banlist-lore:
+    - "&7View all currently active punishments"
+
+player-head:
+  online: "&aOnline"
+  offline: "&7Offline"
+  click-hint: "&eClick to open the action menu"
+
+messages:
+  no-permission: "&cYou do not have permission to use this command."
+  player-only: "&cThis command can only be used by a player."
+  action-executed: "&aAction &e{action} &aexecuted for player &e{player}&a."
+  action-no-permission: "&cYou do not have permission for action &e{action}&c."
+  reload-success: "&aAbanGUI configuration reloaded."
+  no-reasons: "&cNo reasons configured for this action — add some in reasons.yml."

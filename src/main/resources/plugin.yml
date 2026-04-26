@@ -1,0 +1,108 @@
+name: AbanGUI
+version: '1.0.0'
+main: me.d2glaidee.abangui.AbanGUI
+api-version: '1.21'
+author: d2glaidee
+website: https://github.com/d2glaidee
+description: Interactive GUI addon for AdvancedBan punishment management
+depend:
+  - AdvancedBan
+commands:
+  abangui:
+    description: Opens the punishment GUI
+    usage: /abangui
+    permission: abangui.use
+    aliases: [agui]
+permissions:
+  abangui.*:
+    description: Full access to all AbanGUI features
+    default: op
+    children:
+      abangui.use: true
+      abangui.ban: true
+      abangui.tempban: true
+      abangui.banip: true
+      abangui.tempipban: true
+      abangui.mute: true
+      abangui.tempmute: true
+      abangui.kick: true
+      abangui.warn: true
+      abangui.tempwarn: true
+      abangui.note: true
+      abangui.unban: true
+      abangui.unbanip: true
+      abangui.unmute: true
+      abangui.unwarn: true
+      abangui.unnote: true
+      abangui.check: true
+      abangui.history: true
+      abangui.warns: true
+      abangui.notes: true
+      abangui.banlist: true
+      abangui.reload: true
+  abangui.use:
+    description: Access to the GUI
+    default: op
+  abangui.ban:
+    description: Ban through GUI
+    default: op
+  abangui.tempban:
+    description: TempBan through GUI
+    default: op
+  abangui.banip:
+    description: Ban IP through GUI
+    default: op
+  abangui.tempipban:
+    description: Temporary IP ban through GUI
+    default: op
+  abangui.mute:
+    description: Mute through GUI
+    default: op
+  abangui.tempmute:
+    description: TempMute through GUI
+    default: op
+  abangui.kick:
+    description: Kick through GUI
+    default: op
+  abangui.warn:
+    description: Warn through GUI
+    default: op
+  abangui.tempwarn:
+    description: TempWarn through GUI
+    default: op
+  abangui.note:
+    description: Add note through GUI
+    default: op
+  abangui.unban:
+    description: Unban through GUI
+    default: op
+  abangui.unbanip:
+    description: Unban IP through GUI
+    default: op
+  abangui.unmute:
+    description: Unmute through GUI
+    default: op
+  abangui.unwarn:
+    description: Clear warnings through GUI
+    default: op
+  abangui.unnote:
+    description: Clear notes through GUI
+    default: op
+  abangui.check:
+    description: View player status through GUI
+    default: op
+  abangui.history:
+    description: View punishment history
+    default: op
+  abangui.warns:
+    description: View player's warnings through GUI
+    default: op
+  abangui.notes:
+    description: View player's notes through GUI
+    default: op
+  abangui.banlist:
+    description: View global banlist through GUI
+    default: op
+  abangui.reload:
+    description: Reload configuration
+    default: op
