@@ -15,7 +15,7 @@ Paper 1.21+ • Java 21
 
 `/abangui` → paginated list of player heads → click a player → pick an action → choose a reason → done. The plugin builds and dispatches the AdvancedBan command automatically.
 
-Available actions: **Ban, TempBan, Mute, TempMute, Warn, TempWarn, Unban, Unmute, Unwarn, History**.
+Available actions: **Ban, TempBan, Mute, TempMute, Warn, TempWarn, Unban, Unmute, Unwarn, History, BanIp, TempIpBan, Kick, Note**.
 
 Reasons are loaded from `reasons.yml` which has a built-in guide so you can customize everything without reading external docs.
 
@@ -91,9 +91,9 @@ Need another language? Copy `messages_en.yml`, rename to `messages_xx.yml`, tran
 
 `/abangui` → список игроков с пагинацией → клик по игроку → выбор действия → выбор причины → готово. Плагин сам собирает и выполняет команду AdvancedBan.
 
-Доступные действия: **Ban, TempBan, Mute, TempMute, Warn, TempWarn, Unban, Unmute, Unwarn, History**.
+Доступные действия: **Ban, TempBan, Mute, TempMute, Warn, TempWarn, Unban, Unmute, Unwarn, History, BanIp, TempIpBan, Kick, Note**.
 
-Причины загружаются из `reasons.yml` — внутри файла есть подробный гайд на русском, так что разберётесь без сторонних доков.
+Причины загружаются из `reasons.yml` — внутри файла есть подробный гайд на русском.
 
 ### Зависимости
 
