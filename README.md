@@ -1,4 +1,4 @@
-# AbanGUI
+# AbanGUI (AdvancedBanGUI)
 
 GUI addon for [AdvancedBan](https://www.spigotmc.org/resources/advancedban.8695/) — manage punishments through a chest menu instead of typing commands.
 
