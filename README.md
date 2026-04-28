@@ -158,5 +158,5 @@ Need another language? Copy `messages_en.yml`, rename to `messages_xx.yml`, tran
 
 ```bash
 git clone https://github.com/d2glaidee/AdvancedBanGUI
-cd AbanGUI
+cd AdvancedBanGUI
 ./gradlew jar
